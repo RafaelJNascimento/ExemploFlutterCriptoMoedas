@@ -8,12 +8,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:cripto_moeda/main.dart';
+import 'package:cripto_moeda/meu_aplicativo.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+    await tester.pumpWidget(const MeuAplicativo());
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
